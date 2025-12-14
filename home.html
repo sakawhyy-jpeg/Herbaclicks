@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HerbaClick - Konsultasi & Toko Obat Tradisional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="bg-decoration">
+  <div class="leaf leaf1">🌿</div>
+  <div class="leaf leaf2">🍃</div>
+  <div class="leaf leaf3">🌱</div>
+</div>
+
+<header>
+  <div class="logo-area">
+    <img src="/Users/MyBook Hype AMD/Downloads/logoherbaclick.png" alt="Logo HerbaClick" class="logo-img">
+    <h1>HerbaClick!</h1>
+  </div>
+  <nav>
+    <a href="#">🏠 Home</a>
+    <a href="#">🛍️ Toko</a>
+    <a href="chat.html">💬 Chat</a>
+    <div class="profile" id="profileMenu">
+      <div class="profile-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="User Icon">
+        Username
+      </div>
+      <div class="dropdown" id="dropdownMenu">
+        <a href="#">👤 Profil Saya</a>
+        <a href="#" style="color:#e53e3e;">🚪 Logout</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Halo, User! <span class="wave">👋</span></h2>
+    <p>Selamat datang kembali di <b>HerbaClick!</b> — tempat terbaik untuk konsultasi herbal dan belanja produk alami terpercaya. Dapatkan solusi kesehatan alami hanya dalam satu klik!</p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">💬 Mulai Konsultasi</a>
+      <a href="#" class="btn-secondary">🛒 Kunjungi Toko</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="images/logoherbaclick.png" alt="Herbal Illustration">
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat-card"><div class="icon">👥</div><h3>5000+</h3><p>Pengguna Aktif</p></div>
+  <div class="stat-card"><div class="icon">💬</div><h3>10K+</h3><p>Konsultasi Selesai</p></div>
+  <div class="stat-card"><div class="icon">🌿</div><h3>50+</h3><p>Produk Herbal</p></div>
+  <div class="stat-card"><div class="icon">⭐</div><h3>4.9</h3><p>Rating Kepuasan</p></div>
+</section>
+
+<section class="features">
+  <h3>Mengapa Memilih HerbaClick?</h3>
+  <p class="subtitle">Solusi kesehatan alami terpercaya di ujung jari Anda</p>
+  <div class="grid">
+    <div class="card"><div class="card-icon">🌱</div><h4>Konsultasi Instan</h4><p>Konsultasi langsung dengan ahli herbal tanpa antri.</p></div>
+    <div class="card"><div class="card-icon">🛍️</div><h4>Belanja Aman</h4><p>Produk herbal terjamin dan terpercaya.</p></div>
+    <div class="card"><div class="card-icon">📦</div><h4>Pengiriman Cepat</h4><p>Pesanan dikirim langsung dari toko mitra terdekat.</p></div>
+    <div class="card"><div class="card-icon">🎓</div><h4>Edukasi Herbal</h4><p>Artikel dan video kesehatan tradisional.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 HerbaClick • Sehat alamimu ada di genggamanmu 🌱</p>
+</footer>
+
+<script>
+  const profileMenu = document.getElementById('profileMenu');
+  const dropdown = document.getElementById('dropdownMenu');
+
+  profileMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', () => dropdown.style.display = 'none');
+</script>
+
+</body>
+</html>
